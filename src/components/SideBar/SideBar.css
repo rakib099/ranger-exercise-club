@@ -3,6 +3,9 @@
     top: 0;
     padding: 20px 30px;
 }
+.personal-details {
+    margin-bottom: 30px;
+}
 .personal-info {
     display: flex;
     align-items: center;
