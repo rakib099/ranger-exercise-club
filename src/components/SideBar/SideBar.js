@@ -31,8 +31,9 @@ const SideBar = ({ time }) => {
         addBreakTimeToDb(breakTime);
     }
 
+    // event handler for toast
     const notify = () => {
-        toast.success("Congratulations you are done!!!", {
+        toast.success("Congratulations, you are done!!!", {
             position: toast.POSITION.TOP_CENTER
         })
     }
@@ -45,6 +46,23 @@ const SideBar = ({ time }) => {
                     <div className='personal-title'>
                         <h3>Rakib Un Nabi</h3>
                         <p>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+                <div className="extra-info">
+                    <h5 className='ex-info-title'>Weekly Report:</h5>
+                    <div className="ex-items">
+                        <div className="workouts">
+                            <h3>15</h3>
+                            <p>WORKOUTS</p>
+                        </div>
+                        <div className="kcal">
+                            <h3>855.9</h3>
+                            <p>KCAL</p>
+                        </div>
+                        <div className="minutes">
+                            <h3>01:03:00</h3>
+                            <p>MINUTES</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,7 +78,7 @@ const SideBar = ({ time }) => {
             <div className="exercise-details">
                 <h3>Exercise Details</h3>
                 <p className='exercise-time'>Total time: <span>{totalTime} seconds</span></p>
-                <p>Break time: <span>{breakTime} seconds</span></p>
+                <p>Break time: <span>{breakTime ? breakTime : 0} seconds</span></p>
             </div>
             <button onClick={notify} className='btn-complete'>
                 <p>Activity Completed</p>
