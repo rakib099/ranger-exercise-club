@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { addBreakTimeToDb, getItemFromDb } from '../../utilities/fakeDb';
 import './SideBar.css';
 
-const SideBar = ({time}) => {
+const SideBar = ({ time }) => {
     const [breakTime, setBreakTime] = useState(0);
 
     useEffect(() => {
@@ -16,15 +18,21 @@ const SideBar = ({time}) => {
     // console.log(totalTime)
 
     const breaks = [
-        {key: 1, time: 10},
-        {key: 2, time: 20},
-        {key: 3, time: 30},
-        {key: 4, time: 40}
+        { key: 1, time: 10 },
+        { key: 2, time: 20 },
+        { key: 3, time: 30 },
+        { key: 4, time: 40 }
     ];
-    
+
     const handleAddBreak = (breakTime) => {
         setBreakTime(breakTime);
         addBreakTimeToDb(breakTime);
+    }
+
+    const notify = () => {
+        toast.success("Congratulations you are done!!!", {
+            position: toast.POSITION.TOP_CENTER
+        })
     }
 
     return (
@@ -38,7 +46,7 @@ const SideBar = ({time}) => {
                     breaks.map(b => <p
                         onClick={() => handleAddBreak(b.time)}
                         key={b.key}
-                        >{b.time}</p>)
+                    >{b.time}</p>)
                 }
             </div>
             <div className="exercise-details">
@@ -46,9 +54,10 @@ const SideBar = ({time}) => {
                 <p className='exercise-time'>Total time: <span>{totalTime} seconds</span></p>
                 <p>Break time: <span>{breakTime} seconds</span></p>
             </div>
-            <button className='btn-complete'>
+            <button onClick={notify} className='btn-complete'>
                 <p>Activity Completed</p>
             </button>
+            <ToastContainer />
         </div>
     );
 };
