@@ -2,7 +2,6 @@ import React from 'react';
 import './Exercise.css';
 
 const Exercise = ({exercise, handleAddToList}) => {
-    // console.log(props)
     const {img, title, duration} = exercise;
     return (
         <div className='exercise-card'>

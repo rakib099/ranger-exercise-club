@@ -8,6 +8,7 @@ import './SideBar.css';
 const SideBar = ({ time }) => {
     const [breakTime, setBreakTime] = useState(0);
 
+    // initially load break time from LS
     useEffect(() => {
         const storedBreakTime = getItemFromDb('breakTime');
         setBreakTime(storedBreakTime);
