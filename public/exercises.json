@@ -1,0 +1,44 @@
+[
+    {
+      "id": "636e97b973ed1ee6d46a6578",
+      "title": "Mountain Climber",
+      "img": "https://lh3.googleusercontent.com/I955Xak4P3P7drulXAtdAa9j_qmVPwQ42Z2UoNk6AIUb0r9jFXsWl3DypEjEhWQBUMM=w2400",
+      "duration": 30,
+      "ins": "Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other."
+    },
+    {
+      "id": "636e97b9ac98d025f8648ed7",
+      "title": "Jumping Jacks",
+      "img": "https://lh6.googleusercontent.com/-enXbE9j9KST5RoG03S4P4LKT2fWxk-ZIpBE37be2L_BKwR2KWkr4mrUiSvFbMkwA3c=w2400",
+      "duration": 45,
+      "ins": "Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other."
+    },
+    {
+      "id": "636e97b909a2a1d0b9ac6024",
+      "title": "Abdominal Crunches",
+      "img": "https://lh6.googleusercontent.com/wVV5aR7yNWHb_0wBxD9CYHKc8a_7y0dBEo_MRGx5DjZu1frn2ed_sP3D0BuUCab2tzM=w2400",
+      "duration": 60,
+      "ins": "Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other."
+    },
+    {
+      "id": "636e97b9a8335fddc01de011",
+      "title": "Flutter Kicks",
+      "img": "https://lh5.googleusercontent.com/E4I64MpxeGQkCcLWA3LX017tWtP84wyLvoLXtv1nxsgyM-zwHY852OCWvWnGIdobFTw=w2400",
+      "duration": 40,
+      "ins": "Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other."
+    },
+    {
+      "id": "636e97b933b7a601398a41c3",
+      "title": "Cobra Stretch",
+      "img": "https://lh5.googleusercontent.com/LE8gGa9iPCOTj0Or9cWYnL7zNK0j5_EYDlDSY3f21fR1wb54xBmw66EWhfT_iKnHzSk=w2400",
+      "duration": 25,
+      "ins": "Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other."
+    },
+    {
+      "id": "636e97b9f6ddc53b9a1754b6",
+      "title": "Plank",
+      "img": "https://lh5.googleusercontent.com/b4pFvzPqBM7Icd1CmIG60U8Ew7j5rNFpkGQy4UGxBb7kZ2e8fs2h-ET2sDQqZagEqBI=w2400",
+      "duration": 15,
+      "ins": "Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other."
+    }
+  ]

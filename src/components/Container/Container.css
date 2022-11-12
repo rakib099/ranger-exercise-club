@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 3.8fr 1.2fr;
+}
+.main {
+    border: 2px solid blueviolet;
+}
+.main .exercises-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.side-bar {
+    border: 2px solid green;
+}
