@@ -12,18 +12,19 @@ const SideBar = ({ time }) => {
         setBreakTime(storedBreakTime);
     }, []);
 
-    const totalTime = time.reduce((previous, current) => {
-        return previous + current;
-    }, 0);
-    // console.log(totalTime)
-
+    
     const breaks = [
         { key: 1, time: 10 },
         { key: 2, time: 20 },
         { key: 3, time: 30 },
         { key: 4, time: 40 }
     ];
-
+    
+    const totalTime = time.reduce((previous, current) => {
+        return previous + current;
+    }, 0);
+    // console.log(totalTime)
+    
     const handleAddBreak = (breakTime) => {
         setBreakTime(breakTime);
         addBreakTimeToDb(breakTime);

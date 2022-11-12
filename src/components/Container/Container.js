@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import logo from '../../images/logo.png';
 import Exercise from '../Exercise/Exercise';
 import SideBar from '../SideBar/SideBar';
 import './Container.css';
@@ -22,8 +23,11 @@ const Container = () => {
         <div className='container'>
             <div className='main'>
                 <header>
-                    <h2>Ranger Exercise Club</h2>
-                    <p>Today's Pics</p>
+                    <div className="heading">
+                        <img src={logo} alt="" />
+                        <h2>Ranger Exercise Club</h2>
+                    </div>
+                    <p><span>Today's Pick for you</span> (Add to list to get started)</p>
                 </header>
                 <div className="exercises-container">
                     {
