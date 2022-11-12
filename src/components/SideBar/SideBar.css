@@ -3,6 +3,22 @@
     top: 0;
     padding: 20px 30px;
 }
+.personal-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.personal-info img {
+    width: 50px;
+    border-radius: 50%;
+}
+.personal-title h3, .personal-title p{
+    margin: 0;
+}
+.personal-title p {
+    color: rgba(42, 65, 79, 1);
+}
+
 .break-container {
     display: flex;
     gap: 22.7px;

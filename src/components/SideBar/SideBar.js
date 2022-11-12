@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import pic from '../../images/personal-pic.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addBreakTimeToDb, getItemFromDb } from '../../utilities/fakeDb';
@@ -12,19 +13,19 @@ const SideBar = ({ time }) => {
         setBreakTime(storedBreakTime);
     }, []);
 
-    
+
     const breaks = [
         { key: 1, time: 10 },
         { key: 2, time: 20 },
         { key: 3, time: 30 },
         { key: 4, time: 40 }
     ];
-    
+
     const totalTime = time.reduce((previous, current) => {
         return previous + current;
     }, 0);
     // console.log(totalTime)
-    
+
     const handleAddBreak = (breakTime) => {
         setBreakTime(breakTime);
         addBreakTimeToDb(breakTime);
@@ -38,8 +39,14 @@ const SideBar = ({ time }) => {
 
     return (
         <div className='side-info'>
-            <div className="personal-info">
-                <h2>Name</h2>
+            <div className="personal-details">
+                <div className="personal-info">
+                    <img src={pic} alt="" />
+                    <div className='personal-title'>
+                        <h3>Rakib Un Nabi</h3>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
             </div>
             <h3>Add a break</h3>
             <div className="break-container">
