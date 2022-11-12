@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { addBreakTimeToDb } from '../../utilities/fakeDb';
 import './SideBar.css';
 
 const SideBar = ({time}) => {
@@ -17,6 +18,7 @@ const SideBar = ({time}) => {
     
     const handleAddBreak = (breakTime) => {
         setBreakTime(breakTime);
+        addBreakTimeToDb(breakTime);
     }
 
     return (
