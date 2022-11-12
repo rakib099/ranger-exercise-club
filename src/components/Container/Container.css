@@ -4,10 +4,13 @@
 }
 .main {
     border: 2px solid blueviolet;
+    padding: 70px 55px;
+    background-color: lightcyan;
 }
 .main .exercises-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 .side-bar {
     border: 2px solid green;

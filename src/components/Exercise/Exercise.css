@@ -3,6 +3,22 @@
 }
 .exercise-card {
     border: 1px solid rgba(149, 160, 167, 1);
-    width: 250px;
-    padding: 15px;
+    width: 260px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+.exercise-card img {
+    border-radius: 8px;
+}
+.exercise-card > p > span {
+    font-weight: bold;
+}
+.btn-add {
+    width: 100%;
+    background-color: #a6d3e8;
+    border: none;
+    /* color: white; */
+    font-weight: bold;
+    border-radius: 6px;
 }
