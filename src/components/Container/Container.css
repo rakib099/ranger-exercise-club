@@ -6,11 +6,26 @@
     padding: 70px 55px;
     background-color: lightcyan;
 }
-.main .exercises-container {
+.exercises-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
 .side-bar {
     background-color: #ffeded;  /* #fff6f6 */
+}
+
+@media screen and (max-width: 1079px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .exercises-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1279px) {
+    .exercises-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
