@@ -3,7 +3,6 @@
     grid-template-columns: 3.8fr 1.2fr;
 }
 .main {
-    border: 2px solid blueviolet;
     padding: 70px 55px;
     background-color: lightcyan;
 }
@@ -13,5 +12,5 @@
     gap: 50px;
 }
 .side-bar {
-    border: 2px solid green;
+    background-color: #ffeded;  /* #fff6f6 */
 }

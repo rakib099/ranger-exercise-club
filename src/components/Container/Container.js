@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
+import SideBar from '../SideBar/SideBar';
 import './Container.css';
 
 const Container = () => {
@@ -28,7 +29,7 @@ const Container = () => {
                 </div>
             </div>
             <div className='side-bar'>
-                <h2>Side Bar</h2>
+                <SideBar/>
             </div>
         </div>
     );

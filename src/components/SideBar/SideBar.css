@@ -1,0 +1,30 @@
+.side-info {
+    position: sticky;
+    top: 0;
+    padding: 20px 30px;
+}
+.break-container {
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 5px;
+}
+.break-container > p {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #ff8383; /* #ff8383 */
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.exercise-details p{
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-complete {
+    width: 100%;
+    background-color: #a6d3e8;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
