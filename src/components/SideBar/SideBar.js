@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
-import { addBreakTimeToDb } from '../../utilities/fakeDb';
+import React, { useEffect, useState } from 'react';
+import { addBreakTimeToDb, getItemFromDb } from '../../utilities/fakeDb';
 import './SideBar.css';
 
 const SideBar = ({time}) => {
     const [breakTime, setBreakTime] = useState(0);
+
+    useEffect(() => {
+        const storedBreakTime = getItemFromDb('breakTime');
+        setBreakTime(storedBreakTime);
+    }, []);
+
     const totalTime = time.reduce((previous, current) => {
         return previous + current;
     }, 0);
