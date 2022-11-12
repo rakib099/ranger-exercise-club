@@ -6,7 +6,7 @@
 .break-container {
     background-color: lightcyan;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 .break-container > p {
     display: inline-block;
