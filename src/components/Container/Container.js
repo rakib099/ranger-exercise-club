@@ -5,12 +5,18 @@ import './Container.css';
 
 const Container = () => {
     const [exercises, setExercises] = useState([]);
+    const [time, setTime] = useState([]);
 
     useEffect(() => {
         fetch('exercises.json')
             .then(res => res.json())
             .then(data => setExercises(data));
     }, []);
+
+    const handleAddToList = (duration) => {
+        const newTime = [...time, duration];
+        setTime(newTime);
+    }
 
     return (
         <div className='container'>
@@ -24,12 +30,13 @@ const Container = () => {
                         exercises.map(exercise => <Exercise
                             key={exercise.id}
                             exercise={exercise}
+                            handleAddToList={handleAddToList}
                         />)
                     }
                 </div>
             </div>
             <div className='side-bar'>
-                <SideBar/>
+                <SideBar time={time} />
             </div>
         </div>
     );

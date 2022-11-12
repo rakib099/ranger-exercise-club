@@ -1,14 +1,15 @@
 import React from 'react';
 import './Exercise.css';
 
-const Exercise = ({exercise}) => {
+const Exercise = ({exercise, handleAddToList}) => {
     // console.log(props)
+    const {img, title, duration} = exercise;
     return (
         <div className='exercise-card'>
-            <img src={exercise.img} alt="exercise-img" />
-            <h4 className='exercise-title'>{exercise.title}</h4>
-            <p>Duration: <span>{exercise.duration} secs</span></p>
-            <button className='btn-add'>
+            <img src={img} alt="exercise-img" />
+            <h4 className='exercise-title'>{title}</h4>
+            <p>Duration: <span>{duration} secs</span></p>
+            <button onClick={() => handleAddToList(duration)} className='btn-add'>
                 <p>Add to list</p>
             </button>
         </div>

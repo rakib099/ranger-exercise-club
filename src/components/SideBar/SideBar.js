@@ -1,8 +1,12 @@
 import React from 'react';
 import './SideBar.css';
 
-const SideBar = () => {
-
+const SideBar = ({time}) => {
+    
+    const totalTime = time.reduce((previous, current) => {
+        return previous + current;
+    }, 0);
+    console.log(totalTime)
     const breaks = [10, 20, 30, 40, 50];
     console.log();
     return (
@@ -18,8 +22,8 @@ const SideBar = () => {
             </div>
             <div className="exercise-details">
                 <h4>Exercise Details</h4>
-                <p className='exercise-time'>Total time: </p>
-                <p>Break time: </p>
+                <p className='exercise-time'>Total time: <span>{totalTime} seconds</span></p>
+                <p>Break time: <span></span></p>
             </div>
             <button className='btn-complete'>
                 <p>Activity Completed</p>

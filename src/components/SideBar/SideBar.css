@@ -20,7 +20,13 @@
     background-color: lightcyan;
     padding: 10px;
     border-radius: 5px;
+    color: rgba(42, 65, 79, 1);
+    font-weight: 600;
 }
+.exercise-details p > span {
+    color: #ff0b6f;     /* #1484c8, #c43cfb, #ff50e1, #ff0b6f */
+}
+
 .btn-complete {
     width: 100%;
     background-color: #a6d3e8;
